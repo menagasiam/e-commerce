@@ -53,7 +53,7 @@ export class ProductdataService {
   productData: any[] = [
     {
       id: 1,
-      imageUrl: '../../assets/images/main/chain1.png',
+      imageUrl: './assets/images/main/chain1.png',
       title: 'Neclace 1',
       actualPrice: 2350,
       discountPrice: 1432,
@@ -68,7 +68,7 @@ export class ProductdataService {
     },
     {
       id: 2,
-      imageUrl: '../../assets/images/main/chain2.png',
+      imageUrl: './assets/images/main/chain2.png',
       title: 'Neclace 2',
       actualPrice: 2445,
       discountPrice: 0,
@@ -83,7 +83,7 @@ export class ProductdataService {
     },
     {
       id: 3,
-      imageUrl: '../../assets/images/main/chain3.png',
+      imageUrl: './assets/images/main/chain3.png',
       title: 'EARRINGS 3',
       actualPrice: 457,
       discountPrice: 0,
@@ -98,7 +98,7 @@ export class ProductdataService {
     },
     {
       id: 4,
-      imageUrl: '../../assets/images/main/chain4.png',
+      imageUrl: './assets/images/main/chain4.png',
       title: 'RING 4',
       actualPrice: 489,
       discountPrice: 0,
@@ -113,7 +113,7 @@ export class ProductdataService {
     },
     {
       id: 5,
-      imageUrl: '../../assets/images/main/chain5.png',
+      imageUrl: './assets/images/main/chain5.png',
       title: 'NECKLACE 5',
       actualPrice: 45880,
       discountPrice: 455,
@@ -128,7 +128,7 @@ export class ProductdataService {
     },
     {
       id: 6,
-      imageUrl: '../../assets/images/main/chain6.png',
+      imageUrl: './assets/images/main/chain6.png',
       title: 'RING 6',
       actualPrice: 5434,
       discountPrice: 3345,
@@ -143,7 +143,7 @@ export class ProductdataService {
     },
     {
       id: 7,
-      imageUrl: '../../assets/images/main/image7.png',
+      imageUrl: './assets/images/main/image7.png',
       title: 'NECKLACE 7',
       actualPrice: 3211,
       discountPrice: 1222,
@@ -158,7 +158,7 @@ export class ProductdataService {
     },
     {
       id: 8,
-      imageUrl: '../../assets/images/main/image8.png',
+      imageUrl: './assets/images/main/image8.png',
       title: 'NECKLACE 8',
       actualPrice: 888,
       discountPrice: 686,
@@ -173,7 +173,7 @@ export class ProductdataService {
     },
     {
       id: 9,
-      imageUrl: '../../assets/images/main/image9.png',
+      imageUrl: './assets/images/main/image9.png',
       title: 'EARRINGS 9',
       actualPrice: 4120,
       discountPrice: 2100,
@@ -188,7 +188,7 @@ export class ProductdataService {
     },
     {
       id: 10,
-      imageUrl: '../../assets/images/main/image10.png',
+      imageUrl: './assets/images/main/image10.png',
       title: 'RING 10',
       actualPrice: 886,
       discountPrice: 521,
@@ -203,7 +203,7 @@ export class ProductdataService {
     },
     {
       id: 11,
-      imageUrl: '../../assets/images/main/image11.png',
+      imageUrl: './assets/images/main/image11.png',
       title: 'EARRINGS 11',
       actualPrice: 860,
       discountPrice: 321,
@@ -218,7 +218,7 @@ export class ProductdataService {
     },
     {
       id: 12,
-      imageUrl: '../../assets/images/main/image12.png',
+      imageUrl: './assets/images/main/image12.png',
       title: 'PEARL RING 12',
       actualPrice: 676,
       discountPrice: 541,
@@ -233,7 +233,7 @@ export class ProductdataService {
     },
     {
       id: 13,
-      imageUrl: '../../assets/images/main/yearring.png',
+      imageUrl: './assets/images/main/yearring.png',
       title: 'Gold earring with pearl',
       actualPrice: 2130,
       discountPrice: 0,
@@ -248,7 +248,7 @@ export class ProductdataService {
     },
     {
       id: 14,
-      imageUrl: '../../assets/images/main/image13.png',
+      imageUrl: './assets/images/main/image13.png',
       title: 'Gold earring with pearl 14',
       actualPrice: 1037,
       discountPrice: 0,
@@ -263,7 +263,7 @@ export class ProductdataService {
     },
     {
       id: 15,
-      imageUrl: '../../assets/images/main/image14.png',
+      imageUrl: './assets/images/main/image14.png',
       title: 'gold earring with pearl 15',
       actualPrice: 3554,
       discountPrice: 0,
@@ -278,7 +278,7 @@ export class ProductdataService {
     },
     {
       id: 16,
-      imageUrl: '../../assets/images/main/image15.png',
+      imageUrl: './assets/images/main/image15.png',
       title: 'gold earring with pearl 16',
       actualPrice: 1139,
       discountPrice: 0,
@@ -293,7 +293,7 @@ export class ProductdataService {
     },
     {
       id: 17,
-      imageUrl: '../../assets/images/main/chain3.png',
+      imageUrl: './assets/images/main/chain3.png',
       title: 'NECKLACE 17',
       actualPrice: 45880,
       discountPrice: 450,
@@ -307,7 +307,7 @@ export class ProductdataService {
     },
     {
       id: 18,
-      imageUrl: '../../assets/images/main/necklace.png',
+      imageUrl: './assets/images/main/necklace.png',
       title: 'NECKLACE 18',
       actualPrice: 220,
       discountPrice: 0,
@@ -321,7 +321,7 @@ export class ProductdataService {
     },
     {
       id: 19,
-      imageUrl: '../../assets/images/main/image17.png',
+      imageUrl: './assets/images/main/image17.png',
       title: 'NECKLACE 19',
       actualPrice: 920,
       discountPrice: 0,
@@ -337,7 +337,7 @@ export class ProductdataService {
 
     {
       id: 20,
-      imageUrl: '../../assets/images/catalog/img1.png',
+      imageUrl: './assets/images/catalog/img1.png',
       title: 'Gold Ring with Diamond 20',
       actualPrice: 45880,
       discountPrice: 455,
@@ -351,7 +351,7 @@ export class ProductdataService {
     },
     {
       id: 21,
-      imageUrl: '../../assets/images/catalog/img2.png',
+      imageUrl: './assets/images/catalog/img2.png',
       title: 'NECKLACE 21',
       actualPrice: 888,
       discountPrice: 686,
@@ -365,7 +365,7 @@ export class ProductdataService {
     },
     {
       id: 22,
-      imageUrl: '../../assets/images/catalog/img3.png',
+      imageUrl: './assets/images/catalog/img3.png',
       title: 'RING 22',
       actualPrice: 5434,
       discountPrice: 3345,
@@ -379,7 +379,7 @@ export class ProductdataService {
     },
     {
       id: 23,
-      imageUrl: '../../assets/images/catalog/img4.png',
+      imageUrl: './assets/images/catalog/img4.png',
       title: 'RING 23',
       actualPrice: 886,
       discountPrice: 521,
@@ -393,7 +393,7 @@ export class ProductdataService {
     },
     {
       id: 24,
-      imageUrl: '../../assets/images/catalog/img5.png',
+      imageUrl: './assets/images/catalog/img5.png',
       title: 'EARRINGS 24',
       actualPrice: 860,
       discountPrice: 321,
@@ -407,7 +407,7 @@ export class ProductdataService {
     },
     {
       id: 25,
-      imageUrl: '../../assets/images/catalog/img6.png',
+      imageUrl: './assets/images/catalog/img6.png',
       title: 'PEARL RING 25',
       actualPrice: 676,
       discountPrice: 541,
@@ -421,7 +421,7 @@ export class ProductdataService {
     },
     {
       id: 26,
-      imageUrl: '../../assets/images/catalog/img7.png',
+      imageUrl: './assets/images/catalog/img7.png',
       title: 'NECLACE 26',
       actualPrice: 2350,
       discountPrice: 1432,
@@ -435,7 +435,7 @@ export class ProductdataService {
     },
     {
       id: 27,
-      imageUrl: '../../assets/images/catalog/img8.png',
+      imageUrl: './assets/images/catalog/img8.png',
       title: 'RING 27',
       actualPrice: 489,
       discountPrice: 0,
@@ -449,7 +449,7 @@ export class ProductdataService {
     },
     {
       id: 28,
-      imageUrl: '../../assets/images/catalog/img9.png',
+      imageUrl: './assets/images/catalog/img9.png',
       title: 'RING 28',
       actualPrice: 886,
       discountPrice: 521,
@@ -463,7 +463,7 @@ export class ProductdataService {
     },
     {
       id: 29,
-      imageUrl: '../../assets/images/catalog/img10.png',
+      imageUrl: './assets/images/catalog/img10.png',
       title: 'NECLACE 29',
       actualPrice: 45880,
       discountPrice: 455,
@@ -478,7 +478,7 @@ export class ProductdataService {
     ,
     {
       id: 30,
-      imageUrl: '../../assets/images/catalog/img11.png',
+      imageUrl: './assets/images/catalog/img11.png',
       title: 'RING 30',
       actualPrice: 5434,
       discountPrice: 3345,
@@ -492,7 +492,7 @@ export class ProductdataService {
     },
     {
       id: 31,
-      imageUrl: '../../assets/images/catalog/img12.png',
+      imageUrl: './assets/images/catalog/img12.png',
       title: 'NECLACE 31',
       actualPrice: 888,
       discountPrice: 686,

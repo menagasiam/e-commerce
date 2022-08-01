@@ -1,0 +1,145 @@
+<div class="container-fluid ">
+    <!-- <div class="row navigation">
+        <div>Shop / Ring / Order</div>
+    </div> -->
+    <div class="row checkout">
+        <div class="col-lg-8">
+            <div class="row contact-info">
+                <div class="row ">
+                    <div class="col-sm-6">
+                        <div class="contact">1.Shipping Address</div>
+
+                    </div>
+                    <div class="d-flex justify-content-end col-sm-6 align-items-center">
+                        <button class="change btn" (click)="previewShippingAddressChange()">Change</button>
+                        <img class="ms-2" src="../../assets/icons/checkout/rightarrow.png" />
+                    </div>
+                    <div class="col-6">
+                        <div class="address-text ">{{shippingInfo.firstName +' '+ shippingInfo.lastName}}</div>
+                        <div class="address-text ">{{shippingInfo.street }}</div>
+                        <div class="address-text ">{{shippingInfo.inputAddress2}}, {{shippingInfo.inputState}}
+                            {{shippingInfo.inputZip}}</div>
+                        <div class="address-text ">{{shippingInfo.country}}</div>
+                        <div class="address-text ">{{shippingInfo.phoneNumber}}</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row contact-info">
+                <div class="row ">
+                    <div class="col-sm-6">
+                        <div class="contact">2.Payment Method</div>
+
+                    </div>
+                    <div class="d-flex justify-content-end col-sm-6 align-items-center">
+                        <button class="change btn" (click)="previewPaymentChange()">Change</button>
+                        <img class="ms-2" src="../../assets/icons/checkout/rightarrow.png" />
+                    </div>
+                    <div class="col-12">
+
+                        <div class="address-text ">{{paymentInfo.cardNumber}}</div>
+                    </div>
+                    <div class="col-12">
+
+                        <div class="address-text ">{{paymentInfo.holderName}}</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row contact-info">
+                <div class="row ">
+                    <div class="col-sm-6">
+                        <div class="contact">3.Billinging Address</div>
+
+                    </div>
+                    <div class="d-flex justify-content-end col-sm-6 align-items-center">
+                        <button class="change btn" (click)="previewShippingAddressChange()">Change</button>
+                        <img class="ms-2" src="../../assets/icons/checkout/rightarrow.png" />
+                    </div>
+                    <div class="col-6">
+                        <div class="address-text ">{{shippingInfo.firstName +' '+ shippingInfo.lastName}}</div>
+                        <div class="address-text ">{{shippingInfo.street }}</div>
+                        <div class="address-text ">{{shippingInfo.inputAddress2}}, {{shippingInfo.inputState}}
+                            {{shippingInfo.inputZip}}</div>
+                        <div class="address-text ">{{shippingInfo.country}}</div>
+                        <div class="address-text ">{{shippingInfo.phoneNumber}}</div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row " style="padding: 0px;">
+                <div class="offset-10 col-sm-2 d-flex justify-content-end ">
+                    <a class="continue" [routerLink]="['/thankyou']" (click)="navigateThankyouPage()">Continue</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-4">
+            <div class="order-summary">
+                <div class="row ">
+                    <div class="col-sm-8 d-flex head-text">Order Summary</div>
+                    <div class="col-sm-4 d-flex justify-content-end">
+                        <img class="" src="../../assets/icons/checkout/close.png" style="height: 12px;
+                        width: 12px" />
+                    </div>
+                </div>
+
+                <div class="row align-items-start " style="margin-top: 30px" *ngFor="let item of existingCartItem">
+                    <div class="col-sm-4 d-flex"><img class="" src={{item.imageUrl}}
+                            style="height: 100px;width: 100px;" />
+                    </div>
+                    <div class="col-sm-4 d-flex flex-column">
+                        <div class="img-text">{{item.title}}</div>
+                        <div class="form-text">Size: 17</div>
+                        <div class="head-text">${{item.price*item.qty}}</div>
+                    </div>
+                    <div class="col-sm-4 d-flex justify-content-end"><img class=""
+                            src="../../assets/icons/checkout/delete.png" />
+                    </div>
+                </div>
+
+                <div class="row align-items-start " style="margin-top: 30px">
+                    <div class="col-sm-9 d-flex"><input type="text" class="form-control coupon "
+                            placeholder="Coupon code">
+                    </div>
+                    <div class="col-sm-3 d-flex"><button class="btn btn-outline  w-100 add-code">Add
+                            Code</button></div>
+                </div>
+                <hr style="margin:20px 0px">
+                <div class="row subtotal">
+                    <div class="col-sm-8 d-flex ">Subtotal</div>
+                    <div class="col-sm-4 d-flex justify-content-end">${{this.subTotal}}
+                    </div>
+                </div>
+                <div class="row subtotal">
+                    <div class="col-sm-8 d-flex">Shipping</div>
+                    <div class="col-sm-4 d-flex justify-content-end"><span class="login">FREE</span>
+                    </div>
+                </div>
+                <div class="row subtotal">
+                    <div class="col-sm-8 d-flex">Discount</div>
+                    <div class="col-sm-4 d-flex justify-content-end">-
+                    </div>
+                </div>
+                <div class="row subtotal">
+                    <div class="col-sm-8 d-flex">Tax</div>
+                    <div class="col-sm-4 d-flex justify-content-end">-
+                    </div>
+                </div>
+                <hr>
+                <div class="row head-text">
+                    <div class="col-sm-8 d-flex">Total</div>
+                    <div class="col-sm-4 d-flex justify-content-end">${{this.subTotal}}
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+</div>

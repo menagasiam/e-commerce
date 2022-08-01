@@ -1,0 +1,239 @@
+.card-item {
+    padding: 0px 100px;
+    background-color: white;
+}
+
+.img-main {
+    height: 650px;
+    width: 650px;
+}
+
+.main-text {
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(181, 171, 170, 1);
+    margin: 50px 0px;
+    width: 100%;
+}
+
+.img-small {
+    margin-bottom: 30px;
+    height: 130px;
+    width: 130px;
+
+}
+
+.product-title {
+    height: 45px;
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Libre Bodoni';
+    color: rgba(49, 28, 28, 0.7);
+    align-items: center;
+    justify-content: center;
+    line-height: 45px;
+    border-bottom: 1px solid rgba(237, 232, 231, 1);
+
+    height: 70px;
+}
+
+.review {
+    font-family: 'Mulish';
+    line-height: 23px;
+    font-size: 16px;
+    font-weight: 400;
+    color: rgba(49, 28, 28, 0.7);
+}
+
+.heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    color: rgba(49, 28, 28, 1);
+    margin: 30px 0px 10px 0px;
+    /* border-top: 1px solid rgba(237, 232, 231, 1); */
+    font-family: 'Libre Bodoni';
+}
+
+.text {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Mulish';
+    color: rgba(49, 28, 28, 1);
+    line-height: 22px;
+
+}
+
+.border-style {
+    width: 810px;
+    border-top: 1px solid rgba(237, 232, 231, 1);
+    border-bottom: 1px solid rgba(237, 232, 231, 1);
+}
+
+.bestseller {
+    padding: 6px 16px;
+    background-color: rgba(170, 19, 119, 1);
+    color: rgba(237, 232, 231, 1);
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'mulish';
+    width: fit-content;
+}
+
+.strike {
+    text-decoration: line-through;
+    font-size: 20px;
+    margin-right: 8px;
+    color: rgba(181, 171, 170, 1);
+    line-height: 25px;
+    font-weight: 400;
+}
+
+.sale {
+    background-color: rgba(227, 103, 9, 1);
+    padding: 6px 16px;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'mulish';
+    color: rgba(237, 232, 231, 1);
+    width: fit-content;
+}
+
+.new {
+    padding: 6px 16px;
+    background-color: rgba(0, 76, 63, 1);
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'mulish';
+    color: rgba(237, 232, 231, 1);
+    width: fit-content;
+}
+
+
+.card-heading {
+    font-size: 48px;
+    font-weight: 700px;
+    color: rgba(49, 28, 28, 1);
+    line-height: 60px
+}
+
+.view-all {
+    color: rgba(227, 103, 9, 1);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+
+}
+
+.right-arrow {
+    height: 16px;
+    width: 8px;
+    margin-top: -10px;
+}
+
+.card-block {
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.card-footer-text {
+    color: black rgba(49, 28, 28, 1);
+    font-family: 'Mulish';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.price {
+    font-family: 'libre Bodoni';
+    font-size: 28px;
+    font-weight: 700;
+    color: black rgba(49, 28, 28, 1);
+}
+
+.review1 {
+    height: 60px;
+    width: 159px;
+    font-family: 'libre Bodoni';
+    font-size: 48px;
+    font-weight: 700;
+    color: black rgba(49, 28, 28, 1);
+    line-height: 60px;
+    margin-top: 45px;
+}
+
+.liza {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'mulish';
+    line-height: 30px;
+}
+
+.star {
+    height: 18px;
+    width: 19px;
+
+}
+
+.review-text {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Mulish';
+    color: rgba(49, 28, 28, 1);
+    line-height: 30px;
+    font-style: italic;
+    margin: 30px 0px;
+    width: 810px;
+    height: 120px;
+
+}
+
+.size {
+    height: 42px;
+    width: 120px;
+    border: 1px solid rgba(181, 171, 170, 1);
+    background-color: white;
+}
+
+.heart {
+    border: 1px solid rgba(227, 103, 9, 1);
+    height: 42px;
+    width: 120px;
+    background-color: white;
+}
+
+.klick {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    height: 42px;
+    width: 220px;
+    border: 1px solid rgba(227, 103, 9, 1);
+    color: rgba(227, 103, 9, 1);
+    background-color: white;
+}
+
+.klick:hover {
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 40%);
+}
+
+.buy-now {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    height: 42px;
+    width: 220px;
+    border: 1px solid rgba(227, 103, 9, 1);
+    background-color: rgba(227, 103, 9, 1);
+    color: white;
+}
+
+.content {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: 'Mulish';
+    color: rgba(49, 28, 28, 1);
+    margin-top: 70px;
+
+}

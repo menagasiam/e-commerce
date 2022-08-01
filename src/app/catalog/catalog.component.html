@@ -1,0 +1,207 @@
+<div class="row main">
+
+
+    <div class="row main-text">
+        Shop/Rolex/Oyster
+    </div>
+    <div class="row ">
+
+        <div class="col-md-3" style="padding-right: 30px;">
+            <div class="row justify-content-between">
+                <div class="col-md-6 col-sm-6 col-xs-6 padding-reset">
+                    <div class="title-filter">Filters</div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-6 d-flex justify-content-end padding-reset">
+                    <div class="reset"></div>
+                </div>
+            </div>
+
+            <div class="row">
+                <ul class="w-100" style="padding:0px">
+                    <li class="d-flex flex-column justify-content-between w-100">
+                        <div class="content-li " (click)=" togglePrice()">
+                            <div class=" side-content ">Price</div>
+                            <div style=" margin-top:20px ;"><img src="../../assets/icons/catalog/downarrow.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="price-filter-data" [style.display]="showPriceType ? 'block' : 'none'">
+                            <div class="form-check d-flex align-items-center pb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ms-2 mt-auto" for="flexCheckDefault">
+                                    1000 - 5000
+                                </label>
+                            </div>
+                            <div class="form-check d-flex align-items-center pb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ms-2 mt-auto" for="flexCheckDefault">
+                                    5000 - 10000
+                                </label>
+                            </div>
+                            <div class="form-check d-flex align-items-center pb-2">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                <label class="form-check-label ms-2 mt-auto" for="flexCheckDefault">
+                                    10000 >
+                                </label>
+                            </div>
+                        </div>
+                        <hr>
+
+                    </li>
+                    <li class="d-flex flex-column justify-content-between w-100">
+                        <div class="content-li ">
+                            <div class="side-content ">Collection</div>
+                            <div style="margin-top:20px ;"><img src="../../assets/icons/catalog/downarrow.png" alt="">
+                            </div>
+
+                        </div>
+                        <hr>
+                    </li>
+                    <li class="d-flex flex-column justify-content-between w-100">
+                        <div class="content-li ">
+                            <div class="side-content ">Insert</div>
+                            <div style="margin-top:20px ;"><img src="../../assets/icons/catalog/downarrow.png" alt="">
+                            </div>
+
+                        </div>
+                        <hr>
+                    </li>
+                    <li class="d-flex flex-column justify-content-between w-100">
+                        <div class="content-li ">
+                            <div class="side-content ">Insert Color</div>
+                            <div style="margin-top:20px ;"><img src="../../assets/icons/catalog/downarrow.png" alt="">
+                            </div>
+
+                        </div>
+                        <hr>
+                    </li>
+                    <li class="d-flex flex-column justify-content-between w-100">
+                        <div class="content-li ">
+                            <div class="side-content ">Metal</div>
+                            <div style="margin-top:20px ;"><img src="../../assets/icons/catalog/downarrow.png" alt="">
+                            </div>
+
+                        </div>
+                        <hr>
+                    </li>
+                    <li class="d-flex flex-column justify-content-between w-100">
+                        <div class="content-li ">
+                            <div class="side-content ">Metal Color</div>
+                            <div style="margin-top:20px ;"><img src="../../assets/icons/catalog/downarrow.png" alt="">
+                            </div>
+
+                        </div>
+                        <hr>
+                    </li>
+                    <li class="d-flex flex-column justify-content-between w-100">
+                        <div class="content-li ">
+                            <div class="side-content ">Sample</div>
+                            <div style="margin-top:20px ;"><img src="../../assets/icons/catalog/downarrow.png" alt="">
+                            </div>
+
+                        </div>
+
+                        <hr>
+                    </li>
+                    <li class="d-flex flex-column justify-content-between w-100">
+                        <div class="content-li " (click)="toggleProductType()">
+                            <div class="side-content ">Product Type</div>
+                            <div style="margin-top:20px ;"><img src="../../assets/icons/catalog/downarrow.png" alt="">
+                            </div>
+
+                        </div>
+                        <div class="price-filter-data" [style.display]="showProductType ? 'block' : 'none'">
+
+                            <div class="form-check d-flex align-items-center pb-2">
+                                <input (change)="getProductType($event)" class="form-check-input" type="checkbox"
+                                    value="Necklace" id="Necklace">
+                                <label class="form-check-label ms-2 mt-auto" for="Necklace">
+                                    Necklace
+                                </label>
+                            </div>
+                            <div class="form-check d-flex align-items-center pb-2">
+                                <input (change)="getProductType($event)" class="form-check-input" type="checkbox"
+                                    value="Ring" id="Rings">
+                                <label class="form-check-label ms-2 mt-auto" for="Rings">
+                                    Rings
+                                </label>
+                            </div>
+                            <div class="form-check d-flex align-items-center pb-2">
+                                <input (change)="getProductType($event)" class="form-check-input" type="checkbox"
+                                    value="Earrings" id="Earrings">
+                                <label class="form-check-label ms-2 mt-auto" for="Earrings">
+                                    Earrings
+                                </label>
+                            </div>
+                        </div>
+                        <hr>
+                    </li>
+                    <li class="d-flex flex-column justify-content-between w-100">
+                        <div class="content-li ">
+                            <div class="side-content ">Size</div>
+                            <div style="margin-top:20px ;"><img src="../../assets/icons/catalog/downarrow.png" alt="">
+                            </div>
+
+                        </div>
+                        <hr>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="col-md-9">
+            <div class="row">
+                <img src="../../assets/images/catalog/bigimg.png" style="width: 100%;" />
+            </div>
+
+            <div class="row">
+                <div class="d-flex justify-content-between style">
+                    <div class="result">Results: {{fitleredData.length}}</div>
+                    <div class="d-flex justify-content-between">
+
+
+                        <div class="result">Sort by</div>
+                        <div> <img src="../../assets/icons/catalog/downarrow.png" alt=""></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row ">
+
+                <div class="col-md-4 d-flex justify-content-between"
+                    *ngFor="let item of fitleredData | paginate: { itemsPerPage: 10, currentPage: p}">
+                    <a routerLink="/product-card" [queryParams]="{title:item.title,productId:item.id}"
+                        [queryParams]="{productId:item.id}" class="anchor-style">
+                        <div class="card align-items-center">
+
+                            <div class="mb-4 mt-4">
+                                <div style="position: absolute;">
+                                    <div class="mb-3" [ngClass]="tags" *ngFor="let tags of item.tag">{{tags}}</div>
+                                </div>
+                                <img src="{{item.imageUrl}}" alt="" class="card-img " />
+                            </div>
+                            <div class="card-footer-text mb-3 ">{{item.type}}</div>
+                            <div class="d-flex mb-4">
+                                <div class="strike" *ngIf="item.discountPrice > 0">${{item.actualPrice}}</div>
+                                <div class="price">$ {{item.discountPrice > 0 ? item.discountPrice : item.actualPrice}}
+                                </div>
+                            </div>
+
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="row">
+                <pagination-controls class="d-flex justify-content-center pagination" (pageChange)="p = $event"
+                    previousLabel="" nextLabel="">
+                </pagination-controls>
+            </div>
+        </div>
+
+    </div>
+
+</div>

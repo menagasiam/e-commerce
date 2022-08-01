@@ -1,0 +1,177 @@
+.main {
+    padding: 0px 100px
+}
+
+.main-text {
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 16px;
+    color: rgba(181, 171, 170, 1);
+    margin: 50px 0px;
+    padding: 0px;
+}
+
+.title-filter {
+    font-size: 36px;
+    font-weight: 700;
+    font-family: 'Libre Bodoni';
+    color: rgba(49, 28, 28, 0.7);
+
+}
+
+.left-navtext {
+    width: 25%;
+}
+
+.reset {
+    font-family: 'Mulish';
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(49, 28, 28, 0.7);
+}
+
+.style {
+    margin-top: 30px;
+}
+
+.result {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Libre Bodoni';
+    line-height: 25px;
+}
+
+.card {
+    margin-top: 60px;
+}
+
+.price {
+    font-family: 'libre Bodoni';
+    font-size: 28px;
+    font-weight: 700;
+    color: rgba(49, 28, 28, 1);
+}
+
+.card-footer-text {
+    color: rgba(49, 28, 28, 1);
+    font-family: 'Mulish';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.card-img {
+    height: 334px;
+    /* width: 320px; */
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.content-li {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+.side-content {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'libre Bodoni';
+    color: rgba(49, 28, 28, 1);
+    line-height: 25px;
+    margin-top: 20px;
+}
+
+
+
+.pagination {
+    padding-top: 60px;
+    padding-bottom: 120px;
+    font-size: 16px;
+}
+
+::ng-deep .ngx-pagination li {
+    background-color: #EDE8E7;
+}
+
+::ng-deep .ngx-pagination .current {
+    background-color: #151515 !important;
+}
+
+.page-item {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: 'Mulish';
+    color: #151515;
+}
+
+.page-link {
+    color: #151515;
+}
+
+.anchor-style {
+    text-decoration: none;
+    width: 100%;
+}
+
+hr {
+    margin: 5px 0px;
+}
+
+.form-check .form-check-input[type=checkbox] {
+    border-radius: .25em;
+    height: 20px;
+    width: 20px;
+}
+
+.price-filter-data {
+    padding: 10px 0px;
+}
+
+.padding-reset {
+    padding: 0px;
+}
+
+.sale {
+    background-color: rgba(227, 103, 9, 1);
+    padding: 6px 16px;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'mulish';
+    color: rgba(237, 232, 231, 1);
+    width: fit-content;
+}
+
+.new {
+    padding: 6px 16px;
+    background-color: rgba(0, 76, 63, 1);
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'mulish';
+    color: rgba(237, 232, 231, 1);
+    width: fit-content;
+}
+
+.bestseller {
+    padding: 6px 16px;
+    background-color: rgba(170, 19, 119, 1);
+    color: rgba(237, 232, 231, 1);
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'mulish';
+    width: fit-content;
+}
+
+.strike {
+    text-decoration: line-through;
+    font-size: 16px;
+    margin-right: 8px;
+    color: rgba(181, 171, 170, 1);
+    line-height: 20px;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+}

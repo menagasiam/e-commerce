@@ -1,0 +1,321 @@
+.main-card {
+    padding: 0px 160px;
+    background-color: #EDE8E7;
+}
+
+.side-image {
+    margin-left: -10%;
+    height: 100%;
+}
+
+.right-side-image {
+    display: flex;
+    align-items: end;
+    justify-content: end;
+    flex-direction: column;
+    border-right: 1px solid rgba(181, 171, 170, 1);
+    margin-top: auto;
+    padding-bottom: 80px;
+}
+
+.right-side-image>img {
+    margin-right: -40%;
+}
+
+.girl-image {
+    margin-left: 10%;
+}
+
+.text-top {
+    font-family: 'Libre Bodoni';
+    font-size: 96px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 120px;
+    letter-spacing: 0em;
+    text-align: center;
+    padding-bottom: 80px;
+    margin-left: -12%;
+}
+
+.right-banner {
+
+    padding: 80px 0px;
+}
+
+.banner-seemore {
+    height: 52px;
+    width: 260px;
+    border-radius: 0px;
+    background-color: rgba(227, 103, 9, 1);
+    border: none;
+
+}
+
+.card-item {
+    padding: 0px 160px;
+    background-color: white;
+}
+
+
+
+.card-heading {
+    font-size: 48px;
+    font-weight: 700px;
+    color: rgba(49, 28, 28, 1);
+    line-height: 60px
+}
+
+.view-all {
+    color: rgba(227, 103, 9, 1);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 25px;
+
+}
+
+.view-all>a {
+    text-decoration: none;
+    color: rgba(227, 103, 9, 1);
+}
+
+.right-arrow {
+    height: 16px;
+    width: 8px;
+    margin-top: -10px;
+}
+
+.card-block {
+    margin-top: 100px;
+    margin-bottom: 40px;
+}
+
+.card {
+    margin-bottom: 30px;
+}
+
+.card-footer-text {
+    color: black rgba(49, 28, 28, 1);
+    font-family: 'Mulish';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.price {
+    font-family: 'libre Bodoni';
+    font-size: 28px;
+    font-weight: 700;
+    color: black rgba(49, 28, 28, 1);
+}
+
+.bestseller {
+    padding: 6px 16px;
+    background-color: rgba(170, 19, 119, 1);
+    color: rgba(237, 232, 231, 1);
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'mulish';
+    width: fit-content;
+}
+
+.strike {
+    text-decoration: line-through;
+    font-size: 16px;
+    margin-right: 8px;
+    color: rgba(181, 171, 170, 1);
+    line-height: 20px;
+    font-weight: 400;
+}
+
+.sale {
+    background-color: rgba(227, 103, 9, 1);
+    padding: 6px 16px;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'mulish';
+    color: rgba(237, 232, 231, 1);
+    width: fit-content;
+}
+
+.new {
+    padding: 6px 16px;
+    background-color: rgba(0, 76, 63, 1);
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'mulish';
+    color: rgba(237, 232, 231, 1);
+    width: fit-content;
+}
+
+.collection {
+    padding: 0px 160px;
+    background-color: #EDE8E7;
+    height: 792px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.new-collection {
+    font-size: 48px;
+    font-weight: 700;
+    font-family: 'Libre Bodoni';
+    color: rgba(49, 28, 28, 1);
+    height: 60px;
+}
+
+span {
+    color: rgba(227, 103, 9, 1);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    font-family: 'Libre Bodoni';
+}
+
+p {
+    color: rgba(49, 28, 28, 1);
+    font-size: 16px;
+    font-style: italic;
+    font-weight: 400;
+    font-family: 'Libre Bodoni';
+    height: 247px;
+    line-height: 20px;
+}
+
+.seemore {
+    width: 260px;
+    height: 52px;
+    background-color: rgba(227, 103, 9, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 16px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.new-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 30px;
+}
+
+.card-title {
+    font-size: 24px;
+    font-weight: 600;
+    font-family: 'Mulish';
+    color: rgba(49, 28, 28, 1);
+}
+
+.card-text {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Mulish';
+    color: rgba(49, 28, 28, 1);
+    line-height: 24px;
+}
+
+.seemore-collection {
+    background-color: white;
+    border: 1px solid rgba(49, 28, 28, 1);
+    height: 32px;
+    width: 100px;
+    padding: 10px 20px;
+    color: rgba(49, 28, 28, 1)
+}
+
+.category {
+    padding: 220px 160px 100px 160px;
+    background-color: white;
+}
+
+.shop {
+    list-style: none;
+    height: 90%;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    font-size: 'Mulish';
+    width: 15%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 50px 0px;
+    text-align: center;
+}
+
+.shop>div>a {
+    text-decoration: none;
+    color: rgba(181, 171, 170, 1);
+}
+
+.shop>div>a.active {
+    color: rgba(227, 103, 9, 1);
+}
+
+.people-choose {
+    padding: 120px 250px;
+    background-color: #EDE8E7;
+
+}
+
+.icon-text {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Libre Bodoni';
+    line-height: 25px;
+    color: rgba(49, 28, 28, 1);
+}
+
+.icon-content {
+    font-size: 16px;
+    color: rgba(49, 28, 28, 1);
+    font-weight: 400;
+    font-family: 'Mulish';
+    line-height: 22px;
+    text-align: center;
+}
+
+.people-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.Subscribe {
+    height: 48px;
+    width: 172px;
+    background-color: #311C1C;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Libre Bodoni';
+    color: rgba(237, 232, 231, 1);
+
+
+}
+
+.email-field {
+    height: 48px;
+    width: 262px;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+.Subscribe-card {
+    padding: 120px 0px;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+}
+
+.anchor-style {
+    text-decoration: none;
+    width: 100%;
+    color: rgba(49, 28, 28, 1)
+}

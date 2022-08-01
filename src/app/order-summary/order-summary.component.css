@@ -1,0 +1,182 @@
+.navbar {
+    padding: 20px 100px !important;
+
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.icons {
+    width: 176px;
+}
+
+
+
+a {
+    color: #311C1C;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Libre Bodoni';
+}
+
+@media only screen and (max-width: 992px) {
+    .icons {
+        display: none !important;
+    }
+}
+
+.navbar {
+    padding: 0px 100px;
+
+    border-bottom: 1px solid rgba(181, 171, 170, 1);
+}
+
+.container-fluid {
+    padding: 0px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 31px;
+    font-family: ' Playfair Display';
+}
+
+.breadcrumb {
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container-fluid {
+    padding: 0px 100px;
+
+}
+
+
+
+.navigation {
+    padding: 30px 0px;
+}
+
+.contact-info {
+    margin: 30px 0px;
+    padding: 40px;
+
+    border: 1px solid rgba(181, 171, 170, 1);
+
+}
+
+.contact {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    font-family: 'Libre bodoni';
+    color: rgba(49, 28, 28, 1);
+    margin-bottom: 10px;
+}
+
+.address-text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    font-family: 'Mulish';
+    color: #6E7582;
+}
+
+.order-summary {
+    border: 1px solid rgba(181, 171, 170, 1);
+    padding: 40px;
+    margin: 30px 0px;
+}
+
+.head-text {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: 'Libre bodoni';
+    line-height: 25px;
+    color: rgba(49, 28, 28, 1);
+}
+
+.img-text {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+    font-family: 'Mulish';
+    color: rgba(49, 28, 28, 1);
+}
+
+.add-code {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+    font-family: 'Playfair Display';
+    border: 1px solid rgba(49, 28, 28, 1) !important;
+    width: 110px;
+
+
+}
+
+.btn {
+    border-radius: 0px;
+}
+
+.coupon {
+    color: rgba(181, 171, 170, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 25px;
+    font-family: 'Mulish';
+    border: 1px solid rgba(181, 171, 170, 1);
+    border-radius: 0px;
+    height: 32px;
+}
+
+
+.subtotal {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    font-family: 'Mulish';
+    color: rgba(49, 28, 28, 1);
+    margin-top: 20px;
+}
+
+.continue {
+    height: 42px;
+    width: 230px;
+    padding: 10px 32px 10px 32px;
+    background-color: rgba(227, 103, 9, 1);
+    color: white;
+    border: none;
+}
+
+.qty {
+    height: 35px;
+    width: 35px;
+    background-color: #F8F8F9;
+    padding: 4px;
+    align-items: center;
+    color: rgba(21, 21, 21, 1);
+    font-weight: bold;
+}
+
+.heading {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 42px;
+    font-family: 'Mulish';
+
+}
+
+.btn {
+    border: none;
+}
+
+.no-item-cart {
+    font-size: 20px;
+}

@@ -1,0 +1,144 @@
+<!-- <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <div class="container-fluid justify-content-between">
+        <div class="d-flex">
+            <div> <a href="/">Rolex</a></div>
+            <div style="margin-left: 40px"> <a href="/">New Arrivals</a></div>
+        </div>
+        <div class="logo">Logo</div>
+        <div class="d-flex justify-content-between icons">
+            <img src="../assets/icons/search.png" alt="search" />
+            <img src="../assets/icons/heart.png" alt="heart" />
+            <img src="../assets/icons/men.png" alt="men" />
+        </div>
+    </div>
+</nav> -->
+<nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="#">Shop</a></li>
+        <li class="breadcrumb-item"><a href="#">Ring</a></li>
+        <li class="breadcrumb-item active" aria-current="page">Order</li>
+    </ol>
+</nav>
+<div class="container-fluid ">
+
+
+
+    <div class="row checkout">
+        <div class="col-lg-8" [style.height]="existingCartItem.length == 0 ? '400px': '100%'">
+            <div class="row">
+                <div class="heading">Order Summary</div>
+            </div>
+            <div *ngIf="existingCartItem.length > 0">
+                <div class="row contact-info" *ngFor="let item of existingCartItem">
+                    <div class="row d-flex align-items-center ">
+                        <div class="col-2">
+                            <img src={{item.imageUrl}} style="height: 100px;width: 100px;">
+                        </div>
+                        <div class="col-4">
+                            <div class="img-text">{{item.title}}</div>
+                        </div>
+                        <div class="col-2 ">
+                            <div class="logo">${{item.price}}</div>
+                        </div>
+                        <div class="col-3">
+                            <div class="qty d-flex justify-content-center">
+                                <div class="qty d-flex"><button class="btn" (click)="removeQty(item.id)">-</button>
+                                </div>
+                                <div class="qty d-flex">{{item.qty}}</div>
+                                <div class="qty d-flex"><button class="btn" (click)="addQty(item.id)">+</button></div>
+                            </div>
+
+                        </div>
+                        <div class="col-1  ">
+                            <div><button type="button" class="btn-close" (click)="removeItemFromCart(item.id)"
+                                    aria-label="Close"></button></div>
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="row " style="padding: 0px;">
+                    <div class="offset-10 col-sm-2 d-flex justify-content-end ">
+                        <a [routerLink]="['/checkout']" class="continue">Continue</a>
+                    </div>
+                </div>
+            </div>
+            <div *ngIf="existingCartItem.length == 0" class="row text-center">
+                <h4>No item added</h4>
+            </div>
+
+
+
+
+        </div>
+        <div class="col-lg-4" *ngIf="existingCartItem.length > 0">
+            <div class="order-summary">
+                <div class="row ">
+                    <div class="col-sm-8 d-flex head-text">Order Summary</div>
+                    <div class="col-sm-4 d-flex justify-content-end">
+                        <button type="button" class="btn-close" aria-label="Close"></button>
+                    </div>
+                </div>
+
+                <div class="row align-items-start " style="margin-top: 30px" *ngFor="let item of existingCartItem">
+                    <div class="col-sm-4 d-flex"><img class="" src={{item.imageUrl}}
+                            style="height: 100px;width: 100px;" />
+                    </div>
+                    <div class="col-sm-4 d-flex flex-column">
+                        <div class="img-text">{{item.title}}</div>
+                        <div class="form-text">Size: 17</div>
+                        <div class="head-text">${{item.price*item.qty}}</div>
+                    </div>
+                    <div class="col-sm-4 d-flex justify-content-end" (click)="removeItemFromCart(item.id)"><img class=""
+                            src="../../assets/icons/checkout/delete.png" />
+                    </div>
+                </div>
+
+
+                <div class="row align-items-start justify-content-between" style="margin-top: 30px">
+                    <div class="col-sm-12 col-md-12 col-lg-12 col-xl-6 d-flex"><input type="text"
+                            class="form-control coupon " placeholder="Coupon code">
+                    </div>
+                    <div class="col-sm-12  col-md-12 col-lg-12 col-xl-6 d-flex justify-content-end"><button
+                            class="btn btn-outline  add-code">Add
+                            Code</button></div>
+                </div>
+                <hr style="margin:20px 0px">
+                <div class="row subtotal">
+                    <div class="col-sm-8 d-flex ">Subtotal</div>
+                    <div class="col-sm-4 d-flex justify-content-end">${{subTotal}}
+                    </div>
+                </div>
+                <div class="row subtotal">
+                    <div class="col-sm-8 d-flex">Shipping</div>
+                    <div class="col-sm-4 d-flex justify-content-end"><span class="login">FREE</span>
+                    </div>
+                </div>
+                <div class="row subtotal">
+                    <div class="col-sm-8 d-flex">Discount</div>
+                    <div class="col-sm-4 d-flex justify-content-end">-
+                    </div>
+                </div>
+                <div class="row subtotal">
+                    <div class="col-sm-8 d-flex">Tax</div>
+                    <div class="col-sm-4 d-flex justify-content-end">-
+                    </div>
+                </div>
+                <hr>
+                <div class="row head-text">
+                    <div class="col-sm-8 d-flex">Total</div>
+                    <div class="col-sm-4 d-flex justify-content-end">${{subTotal}}
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+
+</div>

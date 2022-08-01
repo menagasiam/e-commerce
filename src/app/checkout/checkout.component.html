@@ -1,0 +1,253 @@
+<div class="container-fluid ">
+    <div class="row navigation">
+        <div>Shop / Ring / Order</div>
+    </div>
+    <div *ngIf="togglePreviewComponent == false" class="row checkout">
+        <div class="col-lg-8">
+            <div class="row contact-info">
+                <div class="row contact">
+                    <div class="col-sm-6">1. Contact Information</div>
+                    <div [style.display]=" hideContactInfo ? 'flex !important' : 'none !important'"
+                        class="d-flex justify-content-end col-sm-6 align-items-center">
+                        <button class="change btn" (click)="contactChange()">Change</button>
+                        <img class="ms-2" src="../../assets/icons/checkout/rightarrow.png" />
+                    </div>
+                </div>
+                <div class="row d-flex" [style.display]=" hideContactInfo ? 'none !important' : 'flex !important'">
+                    <div class="row email">
+                        <label for="email">Email Address</label>
+                    </div>
+                    <div class="row ">
+                        <input style="margin: 0px 12px;" class="form-control" type="text" name="email" id="email"
+                            placeholder="Email Address" [(ngModel)]="contactInfo.email">
+                    </div>
+                    <div class="row">
+                        <span class="form-text ">ALready have an account? <span class="login">Login</span>
+                        </span>
+                    </div>
+                    <div class="row" style="padding: 0px;">
+                        <div class="offset-10 col-sm-2 d-flex justify-content-end " style="padding:0px">
+                            <button (click)="contactInfoContinue()" class="continue">Continue</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row contact-info shipping justify-content-between">
+                <div class="col-sm-6"> 2. Shipping Address</div>
+
+                <div [style.display]=" hideShippingInfo ? 'flex !important' : 'none !important'"
+                    class="change d-flex justify-content-end col-sm-6 align-items-center"><button class="change btn"
+                        (click)="shippingChange()">Change</button> <img class="ms-2"
+                        src="../../assets/icons/checkout/rightarrow.png" /></div>
+
+                <div [style.display]=" hideShippingInfo ? 'none !important' : 'flex !important'" class="row g-3">
+                    <div class="col-md-6">
+                        <label for="firstName" class="form-label checkout-lable">First Name</label>
+                        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="First Name"
+                            [(ngModel)]="shippingInfo.firstName">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="lastName" class="form-label checkout-lable">Last Name</label>
+                        <input type="text" class="form-control" id="lastName" placeholder="Last Name"
+                            [(ngModel)]="shippingInfo.lastName">
+                    </div>
+                    <div class="col-12 checkout-lable">
+                        <label for="autoSizingSelect">Country</label>
+                        <select class="form-select" name="country" id="autoSizingSelect"
+                            [(ngModel)]="shippingInfo.country">
+                            <option selected>Country</option>
+                            <option value="India">India</option>
+                            <option value="USA">USA</option>
+                            <option value="China">China</option>
+                        </select>
+                    </div>
+                    <div class="col-12">
+                        <label for="street" class="form-label checkout-lable">Street Address</label>
+                        <input type="text" class="form-control" id="street" placeholder="Street Address"
+                            [(ngModel)]="shippingInfo.street" name="street">
+                    </div>
+                    <div class="col-12">
+                        <label for="inputAddress2" class="form-label checkout-lable">City</label>
+                        <input type="text" class="form-control" id="inputAddress2" name="inputAddress2"
+                            placeholder="City" [(ngModel)]="shippingInfo.inputAddress2">
+                    </div>
+
+                    <div class="col-md-6">
+                        <label for="inputState" class="form-label checkout-lable">State</label>
+                        <select id="inputState" class="form-select" name="inputState"
+                            [(ngModel)]="shippingInfo.inputState">
+                            <option selected>State</option>
+                            <option value="Tamil Nadu">Tamil Nadu</option>
+                            <option value="Kerala">Kerala</option>
+                            <option value="Chennai">Chennai</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label for="inputZip" class="form-label checkout-lable">Zip Code</label>
+                        <input type="text" class="form-control" id="inputZip" name="inputZip" placeholder="Zip Code"
+                            [(ngModel)]="shippingInfo.inputZip">
+                    </div>
+                    <div class="col-12">
+                        <label for="phoneNumber" class="form-label checkout-lable">Phone Number</label>
+                        <input type="number" class="form-control" id="phoneNumber" placeholder="Phone Number"
+                            name="phoneNumber" [(ngModel)]="shippingInfo.phoneNumber">
+                    </div>
+
+                    <div class="col-12 checkout-lable">
+                        <div class="form-check align-items-center">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck" style="margin-top: 2px;">
+                                Save this informations for a future fast checkout
+                            </label>
+                        </div>
+                    </div>
+                    <div class="col-12 checkout-lable">
+                        <div class="form-check align-items-center">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck" style="margin-top: 2px;">
+                                Receive SMS Notifications
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row" style="padding: 0px;">
+                        <div class="offset-10 col-sm-2 d-flex justify-content-end " style="padding:0px">
+                            <button (click)="shippingInfoContinue()" class="continue">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row contact-info shipping justify-content-between">
+                <div class="col-sm-6"> 3. Payment Method</div>
+
+                <div [style.display]=" hidePaymentInfo ? 'flex !important' : 'none !important'"
+                    class="change d-flex justify-content-end col-sm-6 align-items-center"><button class="change btn"
+                        (click)="paymentChange()">Change</button> <img class="ms-2"
+                        src="../../assets/icons/checkout/rightarrow.png" /></div>
+
+                <div [style.display]=" hidePaymentInfo ? 'none !important' : 'flex !important'" class="row g-3">
+
+                    <div class="col-12 credit-card d-flex justify-content-between">
+                        <div class="col-6  subtotal">
+                            Credit Card
+                        </div>
+                        <div class="col-6 d-flex justify-content-end card-image">
+                            <img src="../../assets//icons//checkout/Icon.png" alt="" class="me-2">
+                            <img src="../../assets//icons//checkout/Icon (1).png" alt="" class="me-2">
+                            <img src="../../assets//icons//checkout/Icon (2).png" alt="" class="me-2">
+                            <img src="../../assets//icons//checkout/Icon (3).png" alt="" class="me-2">
+                            <img src="../../assets//icons//checkout/Icon (4).png" alt="" class="me-2">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <label for="cardnumber" class="form-label checkout-lable">Card Number</label>
+                        <input type="text" class="form-control" id="cardNumber" name="cardNumber"
+                            placeholder="Card Number" [(ngModel)]="paymentInfo.cardNumber">
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="email-field" class="form-label checkout-lable">Email Address</label>
+                        <input type="email" class="form-control" id="shipEmailField1" placeholder="Email Address"
+                            [(ngModel)]="paymentInfo.shipEmailField1" name="shipEmailField1">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="email-field" class="form-label checkout-lable">Email Address</label>
+                        <input type="email" class="form-control" id="shipEmailField2" placeholder="Email Address"
+                            [(ngModel)]="paymentInfo.shipEmailField2" name="shipEmailField2">
+                    </div>
+                    <div class="col-md-4">
+                        <label for="cvvcode" class="form-label checkout-lable">CVV</label>
+                        <input type="number" class="form-control" id="cvvcode" placeholder="CVV">
+                    </div>
+                    <div class="col-12">
+                        <label for="holdername" class="form-label checkout-lable">Cardholder Name</label>
+                        <input type="text" class="form-control" id="holderName" placeholder="Cardholder Name"
+                            [(ngModel)]="paymentInfo.holderName" name="holderName">
+                    </div>
+                    <div class="col-12 checkout-lable">
+                        <div class="form-check align-items-center">
+                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                            <label class="form-check-label" for="gridCheck" style="margin-top: 2px;">
+                                Billing address is the same as shipping address
+                            </label>
+                        </div>
+                    </div>
+                    <div class="row " style="padding: 0px;">
+                        <div class="offset-10 col-sm-2 d-flex justify-content-end " style="padding:0px">
+                            <button (click)="paymentInfoContinue()" class="continue">Continue</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4">
+            <div class="order-summary">
+                <div class="row ">
+                    <div class="col-sm-8 d-flex head-text">Order Summary</div>
+                    <div class="col-sm-4 d-flex justify-content-end">
+                        <img class="" src="../../assets/icons/checkout/close.png" style="height: 12px;
+                        width: 12px" />
+                    </div>
+                </div>
+
+                <div class="row align-items-start " style="margin-top: 30px" *ngFor="let item of existingCartItem">
+                    <div class="col-sm-4 d-flex"><img class="" src={{item.imageUrl}}
+                            style="height: 100px;width: 100px;" />
+                    </div>
+                    <div class="col-sm-4 d-flex flex-column">
+                        <div class="img-text">{{item.title}}</div>
+                        <div class="form-text">Size: 17</div>
+                        <div class="head-text">${{item.price*item.qty}}</div>
+                    </div>
+                    <div class="col-sm-4 d-flex justify-content-end"><img class=""
+                            src="../../assets/icons/checkout/delete.png" />
+                    </div>
+                </div>
+
+                <div class="row align-items-start " style="margin-top: 30px">
+                    <div class="col-sm-9 d-flex"><input type="text" class="form-control coupon "
+                            placeholder="Coupon code">
+                    </div>
+                    <div class="col-sm-3 d-flex"><button class="btn btn-outline  w-100 add-code">Add
+                            Code</button></div>
+                </div>
+                <hr style="margin:20px 0px">
+                <div class="row subtotal">
+                    <div class="col-sm-8 d-flex ">Subtotal</div>
+                    <div class="col-sm-4 d-flex justify-content-end">${{this.subTotal}}
+                    </div>
+                </div>
+                <div class="row subtotal">
+                    <div class="col-sm-8 d-flex">Shipping</div>
+                    <div class="col-sm-4 d-flex justify-content-end"><span class="login">FREE</span>
+                    </div>
+                </div>
+                <div class="row subtotal">
+                    <div class="col-sm-8 d-flex">Discount</div>
+                    <div class="col-sm-4 d-flex justify-content-end">-
+                    </div>
+                </div>
+                <div class="row subtotal">
+                    <div class="col-sm-8 d-flex">Tax</div>
+                    <div class="col-sm-4 d-flex justify-content-end">-
+                    </div>
+                </div>
+                <hr>
+                <div class="row head-text">
+                    <div class="col-sm-8 d-flex">Total</div>
+                    <div class="col-sm-4 d-flex justify-content-end">${{this.subTotal}}
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+</div>
+
+<app-preview *ngIf="togglePreviewComponent == true" [shippingInfo]="shippingInfo" [contactInfo]="contactInfo"
+    [paymentInfo]="paymentInfo" (hidePreviewInfoShipping)="previewShippingAddressChange()"
+    (hidePreviewInfoPayment)="previewPaymentChange()"></app-preview>

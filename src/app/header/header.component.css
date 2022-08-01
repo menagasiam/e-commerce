@@ -1,0 +1,41 @@
+.navbar {
+    padding: 20px 100px !important;
+    background-color: #EDE8E7 !important;
+}
+
+.navbar-nav {
+    align-items: center;
+}
+
+.icons {
+    width: 176px;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: #311C1C;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 25px;
+    font-family: 'Libre Bodoni';
+}
+
+@media only screen and (max-width: 992px) {
+    .icons {
+        display: none !important;
+    }
+}
+
+.navbar {
+    padding: 0px 100px;
+    background-color: #EDE8E7;
+    border-bottom: 1px solid rgba(181, 171, 170, 1);
+}
+
+.container-fluid {
+    padding: 0px;
+}

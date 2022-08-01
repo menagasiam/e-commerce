@@ -1,0 +1,67 @@
+.main-card {
+    padding: 60px 160px;
+    background-color: #EDE8E7;
+}
+
+.footer-card-heading {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    font-family: 'Libre Bodoni';
+    color: #311C1C;
+
+}
+
+.footer-card-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 35px;
+    font-family: 'Mulish';
+    color: #311C1C;
+
+}
+
+
+
+.Subscribe-footer {
+    height: 48px;
+    width: 129px;
+    background-color: #311C1C;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 400px;
+    font-family: 'Libre Bodoni';
+    color: rgba(237, 232, 231, 1);
+
+
+}
+
+.email-field-footer {
+    height: 48px;
+    width: 220px;
+    color: rgba(255, 255, 255, 1);
+
+}
+
+@media only screen and (min-width:476px)and (max-width: 1200px) {
+    .footer-logo {
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .footer-subscribe {
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-nav {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+    }
+}

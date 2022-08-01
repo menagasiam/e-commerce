@@ -1,0 +1,276 @@
+<div class="row main-card">
+    <div class="col-sm-6 left-banner d-flex" style="border-left: 1px solid rgba(181, 171, 170, 1);">
+        <div class="col-sm-2 side-image d-flex flex-column align-items-center justify-content-center">
+            <img src="../../assets/images/main/image1.png" class="mb-3 img-fluid" alt="">
+            <img src="../../assets/images/main/image2.png" class="mb-3 img-fluid" alt="">
+            <img src="../../assets/images/main/image3.png" class="img-fluid" alt="">
+
+        </div>
+        <div class="col-sm-10  girl-image ">
+            <img src="../../assets/images/main/girl.png" class="img-fluid" />
+        </div>
+    </div>
+    <div class="col-sm-6 d-flex ">
+        <div class="col-sm-11 col-lg-11 right-banner">
+            <div class="d-flex flex-column align-items-start text-top">
+                <div>Litkovska</div>
+                <div style="padding-left: 20%;">Collection</div>
+            </div>
+            <div class="d-flex align-items-start" style="margin-left: -6%;">
+                <img src="../../assets/images/main/green-chain.png" alt="" class="img-fluid" />
+                <a style="margin-left: 30px;" [routerLink]="['/catalog']"
+                    class="btn btn-primary banner-seemore d-flex align-items-center justify-content-center">
+                    See More</a>
+            </div>
+        </div>
+
+
+        <div class="col-sm-1 col-lg-1 right-side-image">
+            <img src="../../assets/icons/facebook.png" alt="" class="mb-3">
+            <img src="../../assets/icons/instagram.png" alt="" class="mb-3">
+            <img src="../../assets/icons/linkedin.png" alt="" class="mb-3">
+        </div>
+
+    </div>
+
+</div>
+
+<div class="card-item">
+    <div class="row d-flex justify-content-between align-items-center card-block ">
+        <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 card-heading "> Bestsellers</div>
+        <div class="col-xl-6 col-lg-6  col-sm-6 col-xs-12 d-flex align-items-center justify-content-end h-100">
+            <div class="me-3 view-all h-100"><a [routerLink]="['/catalog']">VIEW ALL</a> </div>
+            <div class="right-arrow ">
+                <img src="../../assets/icons/rightarrow.png" alt="rightarrow" />
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<div class=" row d-flex justify-content-between card-item ">
+    <div class="col-xl-3 col-lg-3 col-md-4  col-sm-6 col-xs-12 d-flex align-items-center"
+        *ngFor="let item of bestSellerData">
+        <a routerLink="/product-card" [queryParams]="{title:item.title,productId:item.id}"
+            [queryParams]="{productId:item.id}" class="anchor-style">
+            <div class="card d-flex align-items-center w-100 pe-3 ps-3">
+                <div class="mb-4 mt-4">
+
+                    <div style="position: absolute;">
+                        <div class="mb-3" [ngClass]="tags" *ngFor="let tags of item.tag">{{tags}}</div>
+                    </div>
+                    <img width="100%" src="{{item.imageUrl}}" alt="" />
+                </div>
+                <div class="card-footer-text mb-3 ">{{item.type}}</div>
+                <div class="d-flex mb-4">
+                    <div class="strike" *ngIf="item.discountPrice > 0">${{item.actualPrice}}</div>
+                    <div class="price">$ {{item.discountPrice > 0 ? item.discountPrice : item.actualPrice}}</div>
+                </div>
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class=" card-item">
+    <div class="row d-flex justify-content-between align-items-center card-block " style="margin-bottom: 40px;">
+        <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 card-heading "> Outlet</div>
+
+        <div class="col-xl-6 col-lg-6  col-sm-6 col-xs-12 d-flex align-items-center justify-content-end"
+            style="height:32px">
+            <div class="me-3 view-all"><a [routerLink]="['/catalog']">VIEW ALL</a></div>
+            <div class="right-arrow">
+                <img src="../../assets/icons/rightarrow.png" alt="rightarrow" />
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="row card-item d-flex justify-content-between">
+    <div class="col-xl-3 col-lg-3 col-md-4  col-sm-6 col-xs-12 d-flex align-items-center"
+        *ngFor="let item of outletData">
+        <a routerLink="/product-card" [queryParams]="{title:item.title,productId:item.id}"
+            [queryParams]="{productId:item.id}" class="anchor-style">
+            <div class="card align-items-center w-100 pe-3 ps-3">
+                <div class="mb-4 mt-4">
+                    <div style="position: absolute;">
+                        <div class="mb-3" [ngClass]="tags" *ngFor="let tags of item.tag">{{tags}}</div>
+                    </div>
+                    <img width="100%" src="{{item.imageUrl}}" alt="" />
+                </div>
+                <div class="card-footer-text mb-3 ">{{item.type}}</div>
+                <div class="d-flex mb-4">
+                    <div class="strike" *ngIf="item.discountPrice > 0">${{item.actualPrice}}</div>
+                    <div class="price">$ {{item.discountPrice > 0 ? item.discountPrice : item.actualPrice}}</div>
+                </div>
+
+            </div>
+        </a>
+    </div>
+</div>
+
+<div class="row collection d-flex flex-wrap" style="margin-top: 80px;">
+    <div class="col-xl-6 col-lg-6   d-flex">
+        <img height="100%" width="100%" src="../../assets/images/main/girl2.png">
+        <img class="h-50 w-100" src="../../assets/images/main/ring.png" alt="ring"
+            style="margin-left: -100px;margin-top: 190px;">
+    </div>
+    <div class="col-xl-4 col-lg-4">
+        <div class="new-collection">New Collection</div>
+
+        <p><span>Breeze</span> - a collection of variability. That we adapt to circumstances just like water adapts to
+            wind currents.
+            <span>Adaptation is an important human skill</span>.
+            Sometimes the mood is calm, like a sea surface, and sometimes it is stormy. But as soon as the storm
+            subsides, thoughts <span>fly to the shores </span> in a breeze - to where it is cozy and carefree. Where a
+            ring of yellow
+            gold with mother-of-pearl makes sense.
+            After all, the<span> details become noticeable</span> when significant problems subside. And we dream that
+            thanks to this
+            jewelry story you will feel the ease of life.
+        </p>
+        <div class="seemore">
+            <a class="seemore text-decoration-none" [routerLink]="['/catalog']">See More</a>
+        </div>
+    </div>
+</div>
+
+<div class="card-item">
+    <div class="row d-flex justify-content-between align-items-center card-block ">
+        <div class="col-xl-6 col-lg-6 col-sm-6 col-xs-12 col-md-8 card-heading "> New Collection</div>
+
+        <div
+            class=" col-xl-6 col-lg-6  col-sm-6 col-xs-12 col-md-4 d-flex align-items-center justify-content-end h-100">
+            <div class="me-3 view-all h-100"><a [routerLink]="['/catalog']">VIEW ALL</a></div>
+            <div class="right-arrow ">
+                <img src="../../assets/icons/rightarrow.png" alt="rightarrow" />
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="row card-item">
+    <div class="row d-flex justify-content-between">
+        <div class="col-lg-6  col-md-12 col-sm-12 col-xs-12 col-xxl-6" *ngFor="let item of newCollection">
+            <div class="card d-flex flex-row w-100">
+                <div class="d-flex align-items-center w-100 ">
+                    <img width="100%" class="ps-1" src="{{item.imageUrl}}" alt="" />
+                </div>
+                <div class="new-text">
+                    <div>
+                        <div class="card-title">{{item.title | uppercase}}</div>
+                        <div class="card-text">{{item.description}}</div>
+                    </div>
+                    <div>
+                        <div class="price">$ {{item.actualPrice}}</div>
+                    </div>
+
+                    <div><a routerLink="/catalog" class="seemore-collection text-decoration-none">See
+                            More</a>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+<div class="row category">
+    <div class="row" style="padding-bottom: 65px;">
+        <div class="card-heading text-center ">Shop by Category</div>
+    </div>
+    <div class="row justify-content-between align-items-center">
+
+
+        <div class="col-md-1 shop">
+
+            <div><button class="btn btn-outline">Bracelets</button></div>
+            <div><button class="btn btn-outline" (click)="filterByType('NECKLACE')">Necklace</button></div>
+            <div><button class="btn btn-outline" (click)="filterByType('RING')">Rings</button></div>
+            <div><button class="btn btn-outline" (click)="filterByType('EARRINGS')">Earrings</button></div>
+            <div><button class="btn btn-outline">Chains</button></div>
+            <div><button class="btn btn-outline"> Brooches</button></div>
+            <div><button class="btn btn-outline">Hairpins</button></div>
+
+
+        </div>
+        <div class="col-md-3" *ngFor="let item of shopbyData">
+            <a routerLink="/product-card" [queryParams]="{title:item.title,productId:item.id}"
+                [queryParams]="{productId:item.id}" class="anchor-style">
+                <div class="card align-items-center">
+                    <div class="mb-4 mt-4">
+                        <div style="position: absolute;">
+                            <div class="mb-3" [ngClass]="tags" *ngFor="let tags of item.tag">{{tags}}</div>
+                        </div>
+                        <img width="100%" src="{{item.imageUrl}}" alt="" />
+                    </div>
+                    <div class="card-footer-text mb-3 ">{{item.type}}</div>
+                    <div class="d-flex mb-4">
+                        <div class="strike" *ngIf="item.discountPrice > 0">${{item.actualPrice}}</div>
+                        <div class="price">$ {{item.discountPrice > 0 ? item.discountPrice : item.actualPrice}}</div>
+                    </div>
+                </div>
+            </a>
+
+        </div>
+
+        <div class="col-md-1 " style="text-align: end;">
+            <img src="../../assets/images/main/icon.png" alt="" />
+        </div>
+    </div>
+
+</div>
+
+<div class="row people-choose ">
+    <div class="row card-heading justify-content-center">Why People Choose Us</div>
+    <div class="row  justify-content-center" style="margin-top:65px ;">
+        <div class="col-sm-4 people-card ">
+            <div>
+                <img src="../../assets/icons/icon1.png" alt="" />
+            </div>
+            <div class="icon-text">High Quality</div>
+            <div class="icon-content">All of our products go through very strict inspection before we dispatch them
+            </div>
+        </div>
+        <div class="col-sm-4 people-card">
+            <div>
+                <img src="../../assets/icons/icon2.png" alt="" />
+            </div>
+            <div class="icon-text">Easy Returns</div>
+            <div class="icon-content">Our return policy is simple and that is why customers love our shop
+            </div>
+        </div>
+        <div class="col-sm-4 people-card">
+            <div>
+                <img src="../../assets/icons/icon3.png" alt="" />
+            </div>
+            <div class="icon-text">Customer Service</div>
+            <div class="icon-content">We offer amazing customer service no matter what happens
+            </div>
+        </div>
+    </div>
+</div>
+<div class="card-item" style="height:430px;">
+    <div class="Subscribe-card ">
+        <div class="card-heading text-center">Subscribe to our Newsletter</div>
+        <div class="icon-content ">
+            We promise to be polite and not bore you
+        </div>
+        <div class="d-flex justify-content-center">
+
+            <input type="email" class="email-field " id="email" placeholder="  Your Email" />
+
+            <button class="Subscribe ">Subscribe</button>
+        </div>
+
+    </div>
+
+</div>
